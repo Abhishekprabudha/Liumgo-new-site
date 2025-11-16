@@ -555,3 +555,270 @@ h3 {
     align-items: flex-start;
   }
 }
+/* --------------------
+   Generic page layout
+----------------------- */
+
+.page-hero {
+  padding: 50px 0 30px;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.page-hero__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.page-hero__subtitle {
+  max-width: 520px;
+  color: #4b5563;
+  margin-top: 8px;
+}
+
+.page-hero__image img {
+  max-width: 100%;
+  border-radius: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.page-section {
+  padding: 40px 0 50px;
+}
+
+.page-copy {
+  margin-top: 24px;
+  color: #4b5563;
+  max-width: 720px;
+}
+
+/* --------------------
+   Team / leadership
+----------------------- */
+
+.team-grid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.team-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 16px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  text-align: center;
+}
+
+.team-avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.team-avatar__circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-primary-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1.3rem;
+}
+
+.team-role {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.team-contact {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* --------------------
+   Services grid
+----------------------- */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.service-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 16px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.service-card h3 {
+  margin-bottom: 6px;
+}
+
+.service-card p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.why-liumgo h2 {
+  margin-bottom: 10px;
+}
+
+.why-liumgo ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+/* --------------------
+   Blog layout
+----------------------- */
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.blog-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  padding: 14px 14px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card__image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.blog-card__image--logo {
+  object-fit: contain;
+  background: #f9fafb;
+}
+
+.blog-card h3 {
+  margin-top: 4px;
+  margin-bottom: 6px;
+}
+
+.blog-card p {
+  flex: 1;
+  margin: 0 0 10px;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+.blog-card__link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* --------------------
+   Contact layout
+----------------------- */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+  gap: 28px;
+}
+
+.contact-details h2 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.contact-details p {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: #4b5563;
+}
+
+.contact-form-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px 18px 22px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.contact-form .form-field {
+  margin-bottom: 12px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  padding: 8px 10px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px rgba(91, 33, 182, 0.15);
+}
+
+/* --------------------
+   Responsive tweaks
+----------------------- */
+
+@media (max-width: 960px) {
+  .page-hero__content {
+    flex-direction: column;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-grid,
+  .service-grid,
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
