@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact Us – Liumgo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container top-bar__content">
+      <span>3/27 Mandawali Block, A2 Saket Block, Delhi - 110092</span>
+      <span>Make a call : +91 8882 540 885</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header__content">
+      <div class="logo">
+        <img src="images/liumgo-logo.png" alt="Liumgo logo" />
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero__content">
+        <div>
+          <h1>Contact Us</h1>
+          <p class="page-hero__subtitle">
+            Send us a message and we'll get back to you as soon as possible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container contact-layout">
+        <div class="contact-details">
+          <h2>Address</h2>
+          <p>3/27 Mandawali Block, A2 Saket Block, Delhi - 110092</p>
+
+          <h2>Phone &amp; Email</h2>
+          <p>+91 8882 540 885<br />liumgo@gmail.com</p>
+
+          <h2>Working Hours</h2>
+          <p>
+            Mon–Fri: 9:00 AM – 6:00 PM<br />
+            Saturday: 10:00 AM – 4:00 PM<br />
+            Sunday: Closed
+          </p>
+        </div>
+
+        <div class="contact-form-card">
+          <!-- This is a simple HTML form. You can later hook it to Formspree / backend. -->
+          <form class="contact-form" action="mailto:liumgo@gmail.com" method="post" enctype="text/plain">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__content">
+      <div class="footer__left">
+        <p>© 2025 Liumgo. All rights reserved.</p>
+        <p>
+          <a href="privacy.html">Privacy Policy</a> ·
+          <a href="terms.html">Terms of Use</a>
+        </p>
+      </div>
+      <div class="footer__right">
+        <a href="index.html">Home</a>
+        <a href="services.html">Pricing &amp; Solutions</a>
+        <a href="about.html">Team</a>
+        <a href="blog.html">News &amp; Updates</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
